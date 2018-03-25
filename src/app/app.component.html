@@ -1,0 +1,18 @@
+<p></p>
+<span class="ui-float-label">
+  <input id="float-input" [(ngModel)]="startStation" type="text" size="30" pInputText> 
+  <label for="float-input">Станция отправления</label>
+</span>
+<p></p>
+<span class="ui-float-label">
+  <input id="float-input" [(ngModel)]="endStation"  type="text" size="30" pInputText> 
+  <label for="float-input">Станция прибытия</label>
+</span>
+<p></p>
+<button pButton label="Маршрут" (click)="handleClick($event)"></button>
+<p></p>
+<p-gmap [options]="options" [overlays]="overlays" [style]="{'width':'100%','height':'320px'}" ></p-gmap>
+
+
+
+
